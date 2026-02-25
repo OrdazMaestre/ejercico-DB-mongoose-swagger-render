@@ -14,14 +14,36 @@ module.exports = {
                         description:"Title task to register",
                         example:"create something"
                     },
- complete:{
+                    complete:{
                         type:'boolean',
                         description:"Status of the task",
                         example:"false"
                     },
 
                 }
-            }
-        }
+            },
+            TaskInput: {
+                type: "object",
+                properties: {
+                    title: {
+                        type: "string",
+                        description: "Title task to register",
+                        example: "Create an awesome task"
+                    },
+                    completed: {
+                        type: "boolean",
+                        description: "Status of the task",
+                        example: "false"
+                    }
+                }
+            },
+            _id:{
+                type:'objectId',
+                description:"An id of a task",
+                example: "6201064b0028de7866e2b2c4"
+            },
+
+        
     }
+}
 }
